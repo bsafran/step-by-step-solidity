@@ -4,7 +4,47 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"name": "bestClub",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "show",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "show2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +73,11 @@
 	},
 	"sources": {
 		"contracts/Variables.sol": {
-			"keccak256": "0x099cfa5c90b2bf728ee7f4cc185336630f1a1f989563414ec4dccc5cbb392623",
+			"keccak256": "0xbec0cd79c82f128335fd022fd36e50fe1c36f48ac31496fa964ffcaed6b8e40d",
 			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://b2a45b144dc8295cd3c6b70e70c63a600f4947a4341a2a44a851e71669e774f3",
-				"dweb:/ipfs/QmWG3ZxS69VccYjK3ZmhE7s9tdC3eLxLPdjazuxgAw93k9"
+				"bzz-raw://17f1692bffecbb2a216c8b6c22fe0969dbf98959c08f2dde03dc2b9d3bf69899",
+				"dweb:/ipfs/QmNYGxaTYyy5wD42E2orVAFC8rQDRhcwMA6urVqsHPAKTA"
 			]
 		}
 	},
