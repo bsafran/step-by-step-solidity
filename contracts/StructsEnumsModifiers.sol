@@ -21,6 +21,9 @@ contract StructsEnumsModifiers {
     address public owner;
     uint256 public txCount;
 
+    event OrderCreated(uint256 _orderId, address indexed _consumer);
+    event ZipChanged(uint256 _orderId, string _zipCode);
+
     constructor() {
         owner = msg.sender;
     }
@@ -34,6 +37,8 @@ contract StructsEnumsModifiers {
         order.products = _products;
         order.status = Status.Taken;
         orders.push(order);
+
+        emit OrderCreated(orders.length - 1, msg.sender);
 
         return orders.length - 1;
     }
@@ -59,6 +64,7 @@ contract StructsEnumsModifiers {
        //require(orders[_orderId].customer == msg.sender, "You are not the owner of the order");
 
        orders[_orderId].zipCode = _zip;
+       emit ZipChanged(_orderId, _zip);
    }
 
    modifier checkProducts(uint256[] memory _products) {

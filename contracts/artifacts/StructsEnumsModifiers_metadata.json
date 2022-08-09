@@ -11,6 +11,44 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_orderId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_consumer",
+						"type": "address"
+					}
+				],
+				"name": "OrderCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_orderId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_zipCode",
+						"type": "string"
+					}
+				],
+				"name": "ZipChanged",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -149,11 +187,11 @@
 	},
 	"sources": {
 		"contracts/StructsEnumsModifiers.sol": {
-			"keccak256": "0x4c9488eaa5c5aa6a749a1c2f8cc822d5aae0e2757c55ff9005ea9109c8f0751c",
+			"keccak256": "0x7bb2a868869f5f30863e6dad27b2b3619433609baabc25d28ddecdfee0da1269",
 			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://3179d2b0cbaf983db0a6c470a2cb86d7a68412fa5393864c9b37ccc130645d8b",
-				"dweb:/ipfs/QmeUAXqXfkKzRYHvkACFWcoXq878AbLNvw1qkHzuN4NaM8"
+				"bzz-raw://6a07eea97c2a3f4382830f54635e19fce058dd184e0b8fe380a9fca2dd0d5a10",
+				"dweb:/ipfs/QmT2BagxZsKV9ujRNoS4mjE7j8Ki8x7a8xjvCmr6uiwbFt"
 			]
 		}
 	},
